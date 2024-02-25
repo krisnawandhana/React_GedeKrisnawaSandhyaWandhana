@@ -6,27 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Buat Produk</h1>
-    <h2>Detail Produk</h2>
+    <h1>Create Product</h1>
+    <h2>Detail Product</h2>
     <form action="#">
-        <label for="nama_produk">Nama Produk:</label>
+        <label for="nama_produk">Product name:</label>
         <input type="text" id="nama_produk" name="nama_produk" required minlength="6" maxlength="50">
 
         <p id="nama_produk_error">
-            Nama produk harus antara 3 dan 50 karakter.
+            Product names must be between 3 and 50 characters.
         </p>
 
-        <label for="kategori_produk">Kategori Produk:</label>
+        <label for="kategori_produk">Product category:</label>
         <select id="kategori_produk" name="kategori_produk">
-            <option value="">Pilih Kategori</option>
-            <option value="elektronik">Elektronik</option>
-            <option value="pakaian">Pakaian</option>
-            <option value="makanan">Makanan</option>
-            <option value="perawatan_tubuh">Perawatan Tubuh</option>
-            <option value="lainnya">Lainnya</option>
+            <option value="">Product Category</option>
+            <option value="elektronik">Electronic</option>
+            <option value="pakaian">Drink</option>
+            <option value="makanan">Food</option>
+            <option value="lainnya">etc</option>
         </select>
 
-        <label for="kondisi_produk">Kondisi Produk:</label>
+        <label for="kondisi_produk">Product Freshness:</label>
         <br>
         <input type="radio" id="baru" name="kondisi_produk" value="baru" checked>
         <label for="baru">Brand New</label><br>

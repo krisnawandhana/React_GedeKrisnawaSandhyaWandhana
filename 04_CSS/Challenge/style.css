@@ -1,3 +1,22 @@
+.Praktik-CSS {
+    background-color: red;
+    margin-right: 10px;
+}
+
+.Praktik-CSS:hover{
+    background-color: #c5c5c5;
+    color: #fff;
+}
+
+.button-confirm{
+    padding: 10px 20px;
+}
+
+.button-confirm:hover {
+    background-color: yellow;
+    color: black;
+}
+
 #hero-section {
     display: flex;
     justify-content: center;

@@ -1,5 +1,10 @@
+.Praktik-CSS, .button-confirm {
+    display: flex;
+  }
+
 .Praktik-CSS {
-    background-color: red;
+    margin-right: 10px;
+    background-color: rgb(255, 0, 0);
     margin-right: 10px;
 }
 

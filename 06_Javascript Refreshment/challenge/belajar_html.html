@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-text {
+            color: red;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+        .success {
+            border: 1px solid green;
+        }
+        /* Tambahkan CSS untuk tabel */
+        table {
+            border-collapse: collapse; /* Menggabungkan border */
+            width: 100%; /* Menentukan lebar tabel */
+        }
+        th,
+        td {
+            border: 1px solid #ddd; /* Menambahkan border pada setiap sel */
+            padding: 8px; /* Menambahkan padding di dalam sel */
+        }
+        th {
+            background-color: #f2f2f2; /* Memberikan warna latar belakang pada header */
+            text-align: left; /* Menyetel teks agar rata kiri */
+        }
+    </style>
+</head>
+
+<body>
+<h1>Document</h1>
+<h2 id="js-dom" class="button">JS Dom</h2>
+<form id="createProductForm" action="#" method="POST">
+    <label for="productName">Product Name:</label><br>
+    <input type="text" id="productName" name="productName" required minlength="6" maxlength="25"><br>
+    <label for="productPrice">Product price:</label><br>
+    <input type="number" id="productPrice" name="productPrice" required min="0" placeholder="$100"> 
+</form><br>
+
+<button id="changeColorButton">
+    Create Product
+</button>
+
+<table id="productTable" border="1">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Product Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Table rows will be added dynamically here -->
+    </tbody>
+</table>
+
+
+<script>
+    document.getElementById('changeColorButton').addEventListener('click', function() {
+        document.getElementById('js-dom').classList.add('red-text');
+    });
+
+    document.getElementById('changeColorButton').addEventListener('click', function() {
+        // input
+        var productName = document.getElementById('productName').value;
+        var productPrice = document.getElementById('productPrice').value;
+
+        if (productName.length < 6 || productName.length > 25) {
+            alert("Product Name must be between 6 and 25 characters long.");
+            return; // Hentikan eksekusi jika validasi tidak terpenuhi
+        }
+
+        // buat tabel row
+        var newRow = document.createElement('tr');
+
+        // buat data cell baru
+        var productNameCell = document.createElement('td');
+        var productPriceCell = document.createElement('td');
+
+        // Set kolom
+        productNameCell.textContent = productName;
+        productPriceCell.textContent = '$' + productPrice;
+
+        // append kolom ke baris
+        newRow.appendChild(productNameCell);
+        newRow.appendChild(productPriceCell);
+
+        // Append baris ke body
+        document.querySelector('#productTable tbody').appendChild(newRow);
+
+        // Reset form
+        document.getElementById('createProductForm').reset();
+    });
+
+</script>
+
+</body>
+</html>

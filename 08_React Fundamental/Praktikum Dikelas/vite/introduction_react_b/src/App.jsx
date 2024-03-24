@@ -4,20 +4,50 @@ function HeroSection(){
   return <div>Hero Section</div>;
 }
 
-function App() {
-  return (
-    <>
-      <div>
-        Introduction React
-        <div>
-          Halaman Div
-        </div>
-        <h1>Tag H1</h1>
-        <HeroSection />
-        <NavBar />
-      </div>
-    </>
-  )
-}
-
-export default App
+function App() { 
+  let bahasa = "bekasi"; 
+  const namaAnakKelas = [ 
+    { 
+      id: 1, 
+      name:"muchson" 
+    }, 
+    { 
+      id: 2, 
+      name:"Hanafi" 
+    }, 
+    { 
+      id: 3, 
+      name:"Krisna" 
+    }, 
+    { 
+      id: 4, 
+      name:"Ardian" 
+    } 
+  ]; 
+  const tampil = () => { 
+    // Fungsi yang akan dieksekusi saat tombol diklik 
+  }; 
+    return ( 
+      <> 
+        <h1>Ini adalah halam APP</h1> 
+        {/* pemanggilan components navbar */} 
+         <NavBar name={"john"}/> 
+ 
+         {/* fungsi map */} 
+         <ul> 
+          {namaAnakKelas.map(nama => ( 
+            <h3>{nama.name}</h3> 
+          ))} 
+         </ul> 
+ 
+         {/* button ternary */} 
+         <button onClick={tampil}> 
+          {bahasa == "indonesia" ? "tombol" : "button"} 
+         </button> 
+          
+          
+      </> 
+    ) 
+  } 
+   
+  export default App

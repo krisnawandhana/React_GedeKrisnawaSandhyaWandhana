@@ -1,1 +1,17 @@
-Untuk memulai pengelolaan proyek di GitHub, langkah pertama adalah membuat repositori. Masuklah ke akun GitHub kita dan buat repositori baru dengan mengklik tombol "+" di pojok kanan atas layar, lalu pilih "New repository". Isilah informasi yang diperlukan seperti nama, deskripsi, dan apakah repositori akan publik atau privat. Setelah membuat repositori, kita dapat mengundang kolaborator dengan masuk ke menu pengaturan dan menambahkan mereka ke daftar collaborator. Untuk berkontribusi pada repositori, kita perlu mengikuti proses commit. Persiapkan perubahan yang ingin kita lakukan, tambahkan perubahan tersebut dengan perintah "git add", lalu buatlah commit dengan memberikan pesan yang menjelaskan perubahan yang kita lakukan menggunakan perintah "git commit -m". Selanjutnya, kirimkan perubahan kita ke repositori dengan perintah "git push". Jika kita ingin bekerja dengan repositori yang sudah ada, kita dapat melakukan cloning dengan menggunakan perintah "git clone" diikuti dengan URL repositori yang ingin kita kloning. Dengan melakukan clone, kita akan mendapatkan salinan repositori tersebut di komputer lokal kita. Selain itu, kita juga bisa menulis README.md untuk dokumentasi proyek kita. Jika terjadi konflik saat melakukan merge atau pull, kita perlu menyelesaikannya dengan memahami sumber konflik dan melakukan penyelesaian secara manual. Setelah menyelesaikan perubahan dan konflik, lakukanlah merge dengan branch tujuan menggunakan perintah "git merge" untuk mengintegrasikan perubahan kita. Dengan melakukan semua langkah ini, kita dapat mengelola proyek secara efisien dan kolaboratif menggunakan GitHub.
+# Summary Version Control and Branch Management (Git)
+
+### Resume Materi KMReact
+
+Poin penting yang dipelajari materi tersebut adalah
+
+### 1. Pengertian Versioning dan Version Control System
+
+Versioning merupakan praktik untuk mengatur versi dari source code program. Hal ini penting untuk melacak perubahan, menghindari kebingungan dalam penamaan file, dan memudahkan dalam mengetahui versi mana yang terakhir. Version Control System adalah sistem yang merekam perubahan pada file sepanjang waktu, memungkinkan pengguna untuk mengingat kembali versi tertentu nantinya.
+
+### 2. Pengertian Git & Github
+
+Git adalah salah satu Version Control System yang populer digunakan oleh para pengembang untuk mengembangkan perangkat lunak secara bersama-sama. Github adalah platform hosting git yang memungkinkan para pengembang untuk berkolaborasi dalam pengembangan perangkat lunak. Dengan Git dan Github, pengembang dapat bekerja secara terdistribusi dan melakukan kolaborasi dalam pengembangan perangkat lunak.
+
+### 3. Penggunaan Git & Github
+
+Para pengembang menggunakan Git dan Github untuk mengelola perubahan dalam pengembangan proyek perangkat lunak. Mereka dapat menggunakan Git & Github melalui antarmuka baris perintah (CLI) atau melalui antarmuka grafis (Desktop). Dengan Git dan Github, pengembang dapat mengelola cabang (branch), melakukan pembaruan (pull request), dan berkolaborasi dengan tim pengembang lainnya dengan efisien.

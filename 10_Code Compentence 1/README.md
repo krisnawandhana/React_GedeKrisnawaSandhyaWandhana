@@ -21,7 +21,7 @@ Saya membuat sebuah website yang mempromosikan applikasi yang bernama HuggingPet
 #### 3. Services
 
 - Pada bagian ini berisi jasa yang ditawarkan pada aplikasi HuggingPet.
-  ![Project](./Screenshot/service.png)
+  ![Service](./Screenshot/services.png)
 
 #### 4. Contact
 
